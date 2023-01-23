@@ -65,8 +65,6 @@ async def currency_per_day(session, days):
                 res = currency_list(result, CURRENCY)
                 print(res)
                 saving_file(res)
-                loop1 = asyncio.get_running_loop()
-                loop1.close()
                 return res
             elif response.status == 429:
                 time.sleep(int(response.headers["Retry-After"]))
