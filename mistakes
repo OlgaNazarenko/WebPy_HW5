@@ -1,0 +1,12 @@
+--the saving_file() function within the currency_list() function. This is causing the file to be saved after each currency
+is processed, instead of after all currencies have been processed. But I had to shift it due not availablity of saving result
+by result in the folder.
+
+-- json.dumps() method inside the saving_file() function. But the result is already in the json format. So, I didn't
+need to call the json.dumps() method. I just write the result in the file.
+
+--currency_list() function to add the date to the cur_list variable, so that the final output includes the date as well.
+
+--the date without time => datetime.now().date()
+
+--

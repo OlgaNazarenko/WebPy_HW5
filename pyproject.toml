@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "webpy-hw5"
+version = "0.1.0"
+description = ""
+authors = ["olganazarenko <113229061+olganazarenko@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "webpy_hw5"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.3"
+asyncio = "^3.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
